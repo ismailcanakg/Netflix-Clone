@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    let sectionTitles: [String] = ["Trending Movies", "Populer", "Trending TV", "Upcoming Movies", "Top Rated"]
+    let sectionTitles: [String] = ["Trending Movies", "Trending TV", "Populer", "Upcoming Movies", "Top Rated"]
     
     private let homeFeedTable: UITableView = {
         
@@ -33,7 +33,7 @@ class HomeViewController: UIViewController {
         let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 500))
         homeFeedTable.tableHeaderView = headerView
         
-        getTrendingMovies()
+        fetchData()
     }
     
     // netflix logosunu ana sayfaya entegre ettik button olarak
@@ -55,17 +55,32 @@ class HomeViewController: UIViewController {
         homeFeedTable.frame = view.bounds
     }
     
-    private func getTrendingMovies() {
-        APICaller.shared.getTrendingMovies { results in
-            switch results {
-            case.success(let movies):
-                print(movies)
-            case.failure(let error):
-                print(error)
-            }
+    private func fetchData() {
+//        APICaller.shared.getTrendingMovies { results in
+//            switch results {
+//            case.success(let movies):
+//                print(movies)
+//            case.failure(let error):
+//                print(error)
+//            }
+//        }
         
+//        APICaller.shared.getTrendingTvs { results in
+//            //
+//        }
+        
+//        APICaller.shared.getUpcomingMovies { _ in
+//            //
+//        }
+//        APICaller.shared.getPopuler { _ in
+//            //
+//        }
+        APICaller.shared.getTopRated { _ in
+            //
         }
+        
     }
+    
 
 }
 
@@ -104,7 +119,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         header.textLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         header.textLabel?.frame = CGRect(x: header.bounds.origin.x + 20, y: header.bounds.origin.y, width: 100, height: header.bounds.height)
         header.textLabel?.textColor = .white
-        header.textLabel?.text = header.textLabel?.text?.lowercased()
+        header.textLabel?.text = header.textLabel?.text?.capitalizeFirstLetter()
     }
     
     // başlıkları ekledik

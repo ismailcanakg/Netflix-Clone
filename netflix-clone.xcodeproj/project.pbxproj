@@ -20,6 +20,8 @@
 		1152DBA62BD2B2C00037B16E /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152DBA52BD2B2C00037B16E /* HeroHeaderUIView.swift */; };
 		1152DBA82BD2C6930037B16E /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152DBA72BD2C6930037B16E /* APICaller.swift */; };
 		1152DBAA2BD2CC9F0037B16E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152DBA92BD2CC9F0037B16E /* Movie.swift */; };
+		1152DBAC2BD2D58B0037B16E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152DBAB2BD2D58B0037B16E /* Extensions.swift */; };
+		1152DBAE2BD2D8A30037B16E /* Tv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152DBAD2BD2D8A30037B16E /* Tv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		1152DBA52BD2B2C00037B16E /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		1152DBA72BD2C6930037B16E /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		1152DBA92BD2CC9F0037B16E /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1152DBAB2BD2D58B0037B16E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1152DBAD2BD2D8A30037B16E /* Tv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				1152DBA92BD2CC9F0037B16E /* Movie.swift */,
+				1152DBAD2BD2D8A30037B16E /* Tv.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 		1152DBA12BD2A8040037B16E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1152DBAB2BD2D58B0037B16E /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 				1152DB9B2BD29E250037B16E /* SearchViewController.swift in Sources */,
 				1152DB862BD29AF30037B16E /* MainTabBarViewController.swift in Sources */,
 				1152DBA42BD2A8450037B16E /* CollectionViewsTableViewCell.swift in Sources */,
+				1152DBAC2BD2D58B0037B16E /* Extensions.swift in Sources */,
 				1152DBA82BD2C6930037B16E /* APICaller.swift in Sources */,
 				1152DBA62BD2B2C00037B16E /* HeroHeaderUIView.swift in Sources */,
 				1152DB9D2BD29E460037B16E /* DownloadsViewController.swift in Sources */,
@@ -216,6 +223,7 @@
 				1152DB842BD29AF30037B16E /* SceneDelegate.swift in Sources */,
 				1152DB992BD29DFF0037B16E /* UpcomingViewController.swift in Sources */,
 				1152DBAA2BD2CC9F0037B16E /* Movie.swift in Sources */,
+				1152DBAE2BD2D8A30037B16E /* Tv.swift in Sources */,
 				1152DB972BD29DCA0037B16E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
